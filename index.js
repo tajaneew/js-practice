@@ -35,7 +35,7 @@ Sample numbers : 0, -1, 4
 Output : 4, 0, -1 */
 
 
-let x = parseInt(prompt('Pick a Number'))
+/* let x = parseInt(prompt('Pick a Number'))
 let y = parseInt(prompt('Pick another Number'))
 let z = parseInt(prompt('Last one I promise'))
 
@@ -58,6 +58,32 @@ if (x>y && x>z) {
 } else {
     alert(z+ "," + y + "," + x);
 }
-}
+} */
 
+let choice= parseInt(prompt('Pick a number'))
+let choice2= parseInt(prompt('Pick another number'))
+let choice3= parseInt(prompt('Pick a final number'))
+
+if(choice>choice2 && choice>choice3) {
+    if(choice2>choice3){
+        alert(choice + ',' + choice2 + ',' + choice3);
+    } else {
+        alert(choice + ',' + choice3 + ',' +choice);
+    } 
+}
+    else if (choice2>choice && choice2>choice3) {
+        if(choice>choice3) {
+        alert(choice2 + ',' + choice1 + ',' + choice3);
+    } else {
+        alert(choice2 + ',' + choice3 + ',' + choice1);
+    } 
+}
+    else if (choice3>choice && choice3>choice2) {
+            if(choice>choice2) {
+                alert(choice3 + ',' + choice + ',' + choice2);
+            } else {
+                alert(choice3 + ',' + choice2 + ',' + choice1)
+            }
+        }
+    
 
